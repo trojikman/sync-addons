@@ -94,6 +94,7 @@ class ApiJsonRequest(WebRequest):
             or result.data
         )
 
+        print("*********** req", request.endpoint.routing)
         return Response(
             body,
             status=status,
