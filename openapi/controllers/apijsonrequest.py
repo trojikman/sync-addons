@@ -100,7 +100,7 @@ class ApiJsonRequest(WebRequest):
             status=status,
             headers=[
                 ("Access-Control-Allow-Origin", "*"),
-                ("Access-Control-Allow-Methods", "POST, GET, PUT, PATCH"),
+                ("Access-Control-Allow-Methods", "POST, GET, PUT, PATCH, OPTIONS"),
                 ("Content-Type", mime),
                 ("Content-Length", len(body)),
             ],

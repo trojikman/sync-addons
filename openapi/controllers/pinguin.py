@@ -116,7 +116,7 @@ def successful_response(status, data=None):
         status=status,
         headers=[
             ("Access-Control-Allow-Origin", "*"),
-            ("Access-Control-Allow-Methods", "POST, GET, PUT, PATCH"),
+            ("Access-Control-Allow-Methods", "POST, GET, PUT, PATCH, OPTIONS"),
         ],
         content_type="application/json; charset=utf-8",
         response=response,
